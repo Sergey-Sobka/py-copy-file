@@ -3,11 +3,7 @@ import os
 
 def copy_file(command: str) -> None:
     parts = command.split()
-    if len(parts) > 2:
-        print(parts)
-        src = parts[0]
-        dst = parts[1]
-        print(src, dst)
+
     if len(parts) != 3 or parts[0] != "cp":
         return
 
